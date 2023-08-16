@@ -31,7 +31,7 @@ const Spacer = ({ children, type = "horizontal", size = 8, ...props }) => {
   );
 };
 
-Image.propTypes = {
+Spacer.propTypes = {
   children: PropTypes.node,
   type: PropTypes.string,
   size: PropTypes.number,
