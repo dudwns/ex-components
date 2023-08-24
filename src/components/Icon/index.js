@@ -18,7 +18,7 @@ const Icon = ({ name, size = 16, strokeWidth = 2, rotate, color = "#222", ...pro
   };
   const { Buffer } = require("buffer");
   const icon = require("feather-icons").icons[name]; // icon을 불러옴
-  const svg = icon ? icon.toSvg(iconStyle) : ""; // icone이 존재하면 svg를 불러옴 (스타일 전달)
+  const svg = icon ? icon.toSvg(iconStyle) : ""; // icon이 존재하면 svg를 불러옴 (스타일 전달)
   const base64 = Buffer.from(svg, "utf8").toString("base64"); // base64로 인코딩
 
   return (

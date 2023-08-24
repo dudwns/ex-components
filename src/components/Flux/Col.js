@@ -5,7 +5,6 @@ import { useMemo } from "react";
 const StyledCol = styled.div`
   max-width: 100%fit-content;
   box-sizing: border-box;
-
   width: ${({ span }) => span && `${(span / 12) * 100}%`};
   margin-left: ${({ offset }) => offset && `${(offset / 12) * 100}%`};
 `;
@@ -17,7 +16,7 @@ const Col = ({ children, span, offset, ...props }) => {
       const horizontalGutter = gutter[0];
       const verticalGutter = gutter[1];
       return {
-        paddingTop: `${horizontalGutter}px`,
+        paddingTop: `${verticalGutter / 2}px`,
         paddingBottom: `${verticalGutter / 2}px`,
         paddingLeft: `${horizontalGutter / 2}px`,
         paddingRight: `${horizontalGutter / 2}px`,

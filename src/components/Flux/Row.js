@@ -24,7 +24,7 @@ const Row = ({ children, justify, align, gutter, ...props }) => {
       const horizontalGutter = gutter[0];
       const verticalGutter = gutter[1];
       return {
-        marginTop: `-${horizontalGutter / 2}px`,
+        marginTop: `-${verticalGutter / 2}px`,
         marginBottom: `-${verticalGutter / 2}px`,
         marginLeft: `-${horizontalGutter / 2}px`,
         marginRight: `-${horizontalGutter / 2}px`,

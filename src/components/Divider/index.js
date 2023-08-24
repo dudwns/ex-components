@@ -22,7 +22,7 @@ const Line = styled.hr`
 
 const Divider = ({
   type = "horizontal", // horizontal, vertical
-  size = "8",
+  size = 8,
   ...props
 }) => {
   const dividerStyle = {

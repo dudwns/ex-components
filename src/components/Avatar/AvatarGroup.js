@@ -1,5 +1,4 @@
 import React from "react";
-import Avatar from ".";
 
 const AvatarGroup = ({ children, shape = "circle", size = 70, ...props }) => {
   const avatars = React.Children.toArray(children)
